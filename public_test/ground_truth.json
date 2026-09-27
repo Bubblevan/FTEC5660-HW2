@@ -1,0 +1,26 @@
+{
+  "CV_1.pdf": {
+    "label": 1
+  },
+  "CV_2.pdf": {
+    "label": 1
+  },
+  "CV_3.pdf": {
+    "label": 1
+  },
+  "CV_4.pdf": {
+    "label": 0,
+    "reason": "Experience at Innovate HK Ltd: CV says start year 2015, LinkedIn says 2014."
+  },
+  "CV_5.pdf": {
+    "label": 0,
+    "reason": "Experience at Microsoft: CV says Senior Analyst, LinkedIn says Analyst with seniority junior."
+  },
+  "CV_6.pdf": {
+    "label": 1
+  },
+  "CV_7.pdf": {
+    "label": 0,
+    "reason": "Skills: CV lists Docker, which is not on LinkedIn."
+  }
+}
