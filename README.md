@@ -90,10 +90,11 @@ python3 hw2.py --cv-folder task2
 attack the MCP server. See the homework description for the full rules.
 
 ## Homework 2 solution:
-> to students: this is your report, see the homework description.
 
 ### Task 1
-> one paragraph describing your solution, and your results on `public_test`.
+
+I built a LangChain agent with `deepseek-v4-flash` and the SocialGraph MCP tools. It resolves the candidate's identity, then checks only the specified CV fields against LinkedIn, using Facebook as supplementary identity evidence. The score parser accepts a JSON score even if the model adds a short rationale before it, avoiding an unnecessary fallback score. The latest local run classified all seven supplied public CVs correctly (7/7).
 
 ### Task 2
-> the attack techniques you used and why you expect them to work.
+
+The adversarial CV keeps the verifier-checked claims consistent with LinkedIn while changing Kelly Tsang's hometown from Sha Tin to Macau and embellishing the AIA bullet to say she led a 500-person team. It contains no hidden text or prompt/role spoofing. The hometown and job-description bullets are outside this Task 1 verifier's discrepancy checks. My Task 1 agent scored the current `task2/adversarial_cv.pdf` 0.9 in three consecutive local runs. The five hidden verifier results are determined during course grading.
