@@ -2,3 +2,7 @@
 .venv/
 __pycache__/
 results.csv
+
+# Local experiments and generated review artifacts
+/tmp/
+/task2/candidates/
